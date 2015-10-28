@@ -13,7 +13,7 @@ public class Javap {
 		}
 		System.out.println(r);
 	}
-	@Test
+	@Test(enabled=false)
 	public void d(){
 		String x = "prasad";
 		String y[] = x.split("");
@@ -22,5 +22,11 @@ public class Javap {
 		r=z+r;		
 		}
 		System.out.println(r);
+	}
+	@Test
+	public void a(){
+		String x= "prasad";
+		String reverses = new StringBuffer(x).reverse().toString();
+		System.out.println(reverses);
 	}
 }
